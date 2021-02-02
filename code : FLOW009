@@ -2,18 +2,18 @@
 
 int main(void) {
 	int T,n=0,x,y;
-	double z;
+	double z=0.0;
 	scanf("%d\n", &T);
 	while(n<T) {
 		scanf("%d %d\n", &x,&y);
 		
 		if (x>1000) {
-			z = (x*y)-(x*y*0.01); 
-			printf("%d\n", z);
+			z = x*y*0.9; 
+			printf("%f\n", z);
 		}
 		else {
 			z = (x*y);
-			printf("%d\n", z);
+			printf("%f\n", z);
 		}
 		
 		n++;
